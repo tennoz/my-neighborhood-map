@@ -1,0 +1,49 @@
+
+html, body {
+  font-family: 'Courier New', Courier, monospace;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.sidebar {
+  background: #272727;
+}
+.header-title {
+  color: white;
+  margin-left: 5px;
+}
+.list-group {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.list-group-item:hover {
+  background: rgba(255, 255, 255, 0.144);
+  color: white;
+}
+.form-control {
+  margin-left: 5px;
+}
+.iwclass {
+  box-shadow: 2px 2px 20px;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.iwclass:hover {
+  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+@media screen and (min-width: 700px) {
+  body {
+    display: flex;
+  }
+}

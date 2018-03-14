@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Neighborhood Map</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- sidebar including list of places and filter option -->
+    <div class="sidebar">
+        <nav class="navbar navbar-inverse">
+            <h3 class="header-title">Coffeeshops in Mansoura</h3>
+            <form class="form-inline">
+                <input class="form-control" type="text" placeholder="Filter" data-bind="value: filter, valueUpdate: 'afterkeydown'">
+            </form>
+        </nav>
+        <!-- lists all visible places (with/out filter) -->
+        <ul class="list-group" data-bind="foreach: visibleLocations">
+            <li class="list-group-item" data-bind="text: title, click :$parent.listItemsClick"></li>
+        </ul>
+    </div>
+    <div id="map"></div>
+
+    <!-- knockout -->
+    <script type="text/javascript" src="js/lib/knockout-3.4.2.js"></script>
+    <!-- jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- data file -->
+    <script type="text/javascript" src="js/data.js"></script>
+    <!-- main scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- google maps api async -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3M5aAdayEKjKr-U7XQF7YtAKkv09kFV4&v=3&callback=initMap" onerror="gErr()" async defer>
+    </script>
+
+</body>
+
+</html>
