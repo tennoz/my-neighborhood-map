@@ -7,8 +7,9 @@
 - Run `index.html` in your favourite browser.
 
 ## Libraries and frameworks used in this project
-* [Knockout.js](http://knockoutjs.com/)
+* [Knockout.js](http://knockoutjs.com)
 * [jQuery](http://jquery.com)
+* [bootstrap](https://getbootstrap.com)
 
 ## APIs used in this project
 * [Google Maps](https://developers.google.com/maps/)
